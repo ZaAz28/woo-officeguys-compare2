@@ -414,7 +414,7 @@ function officeguy_woocommerce_gateway()
             if ($this->settings['pci'] != "redirect")
             {
                 wp_enqueue_script('jquery');
-                wp_enqueue_script('officeguypayments', ($this->settings['environment'] == "dev" ? "http://" : "https://") . $this->settings['environment'] . '.myofficeguy.com/scripts/payments.js');
+                wp_enqueue_script('officeguypayments', 'https://app.sumit.co.il/scripts/payments.js');
             }
             wp_enqueue_style('officeguy-og-css', PLUGIN_DIR . 'includes/css/front.css');
             wp_enqueue_script('officeguy-front', PLUGIN_DIR . 'includes/js/officeguy.js', array('jquery'));
